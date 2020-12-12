@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "jest-teamcity-reporter": "^0.9.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
@@ -15,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ci": "react-scripts test --testResultsProcessor ./node_modules/jest-html-reporter",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -40,6 +42,7 @@
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
     "puppeteer": "^5.4.1",
-    "react-test-renderer": "^17.0.1"
+    "react-test-renderer": "^17.0.1",
+    "jest-html-reporter": "^3.3.0"
   }
 }

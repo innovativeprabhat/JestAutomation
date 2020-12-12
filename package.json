@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test":"set CI=true &&react-scripts test --env=jsdom --testResultsProcessor=./node_modules/jest-html-reporter",
+    "test":"set CI=true &&react-scripts test --env=jsdom --testResultsProcessor=jest-teamcity-reporter",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -24,6 +24,7 @@
       "react-app/jest"
     ]
   },
+
   "browserslist": {
     "production": [
       ">0.2%",

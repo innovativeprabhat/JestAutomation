@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 
 test("Browser Automation",async()=>{
 
-    const browser = await puppeteer.launch({headless:false,waitUntil: 'networkidle0' })
+    const browser = await puppeteer.launch({headless:true,waitUntil: 'networkidle0' })
     const page = await browser.newPage()
     // await page.setViewport({ width: 1280, height: 800 })
     await page.goto('https://dev.realisedrate.com/Sonia')
